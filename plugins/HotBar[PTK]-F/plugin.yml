@@ -1,0 +1,24 @@
+name: HotBar[PTK]
+main: PTK\HotBar\Main
+version: 1.5.0
+api: [1.13.0, 2.0.0]
+load: POSTWORLD
+author: KienPham
+description: "Tạo HotBar bởi PTK-KienPham"
+
+commands:
+ hotbar:
+  description: "HotBar command"
+  aliases: [hb, hbr, hbar]
+  permission: hotbar
+
+permissions:
+ hotbar:
+  default: true
+  description: "Perm to use commands"
+ hotbar.help:
+  default: op
+  description: "Perm to see HotBar help"
+ hotbar.reload:
+  default: op
+  description: "Perm to reload settings"

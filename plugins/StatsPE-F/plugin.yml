@@ -1,0 +1,36 @@
+name: StatsPE
+version: 2.4.7
+api: 2.0.0
+main: SalmonDE\StatsPE
+description: Stats Plugin for your Server!
+author: SalmonDE
+authors: [Aericio, robske_110, XenialDan]
+website: https://salmonde.de/
+commands:
+ stats:
+  description: Shows the Stats of a user.
+  usage: /stats [player]
+  permission: statspe.cmd.stats
+ fts:
+  description: Adds a floating text with stats on your current position
+  usage: /fts <add|list|remove> [name]
+  permission: statspe.cmd.floatingstats
+ fixtable:
+   description: Tries to add or modify columns to a existing table
+   permission: statspe.cmd.fixtable
+permissions:
+ statspe:
+  description: Main permission of StatsPE.
+  children:
+   statspe.cmd:
+    description: Main permission of the StatsPE commands.
+    children:
+     statspe.cmd.fixtable:
+       description: Permission for /fixtable.
+     statspe.cmd.floatingstats:
+      description: Permission for /floatingstats.
+     statspe.cmd.stats:
+      description: Permission for /stats.
+      default: true
+     statspe.cmd.stats.advancedinfo:
+      description: Enables advanced stats about a player for /stats.

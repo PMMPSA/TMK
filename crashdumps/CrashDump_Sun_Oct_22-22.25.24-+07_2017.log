@@ -1,0 +1,75 @@
+Genisys Crash Dump Sun Oct 22 22:25:24 +07 2017
+
+Error: syntax error, unexpected '.20' (T_DNUMBER), expecting ',' or ')'
+File: /plugins/DF/src/DF/DF
+Line: 37
+Type: notice
+
+THIS CRASH WAS CAUSED BY A PLUGIN
+此次出错由插件引起
+
+Code:
+[28] 	${$nagescbpjfn}=TextFormat::GREEN;
+[29] 	}else if($event->getDamage()<6){
+[30] 		${"\x47\x4c\x4fB\x41\x4c\x53"}["\x6e\x70\x76b\x74\x6c\x73\x67\x77\x6bi"]="col\x6fr";
+[31] 		${${"\x47\x4cO\x42\x41\x4cS"}["n\x70\x76\x62t\x6c\x73gw\x6b\x69"]}=TextFormat::YELLOW;
+[32] 		}else{
+[33] 			${${"\x47LO\x42\x41\x4c\x53"}["\x73\x77\x72f\x64l\x62\x65\x71\x6d"]}=TextFormat::RED;
+[34] 			}
+[35] 			${${"\x47\x4c\x4f\x42\x41LS"}["\x65\x69\x6b\x68\x69\x76x"]}=
+[36] 			$event->getEntity()->add(0.1*mt_rand(1,9)*mt_rand(-1,1),0.1*mt_rand(5,9),0.1*mt_rand(1,9)*mt_rand(-1,1));
+[37] 			$jkdmsef="\x63o\x6c\x6f\x72";${$jdvzbomn}=new FloatingTextParticle(${${"GLO\x42\x41\x4cS"}["\x76\x72j\x6a\x73q\x78\x6awq"]},"",${$jkdmsef}."§c-".$event->getDamage()." Máu\n§e".20 - $event-getDamege."/20");
+[38] 			if($event->getEntity()->getHealth()<7){
+[39] 				$svtsmngws="\x63\x6f\x6c\x6fr";
+[40] 				${$svtsmngws}=TextFormat::RED;
+[41] 				}
+[42] 				else if($event->getEntity()->getHealth()<14){${${"G\x4cO\x42\x41\x4c\x53"}["s\x77\x72\x66\x64\x6cbeqm"]}=TextFormat::YELLOW;}else{${"G\x4cOB\x41\x4c\x53"}["\x62\x71\x63\x70\x76\x79\x75\x73\x75\x6c"]="col\x6fr";${${"\x47\x4c\x4f\x42\x41L\x53"}["bqc\x70vy\x75\x73\x75\x6c"]}=TextFormat::GREEN;}${${"\x47\x4c\x4fB\x41LS"}["v\x72\x6a\x6a\x73\x71xj\x77\x71"]}=$event->getEntity()->add(0,2.5,0);${${"\x47\x4c\x4f\x42\x41\x4cS"}["\x79\x70l\x6cvr"]}=new FloatingTextParticle(${${"\x47\x4cO\x42AL\x53"}["\x76\x72\x6a\x6as\x71\x78j\x77q"]},"",${${"\x47\x4cO\x42\x41\x4cS"}["\x73wr\x66\x64l\x62\x65\x71m"]}.($event->getEntity()->getHealth()-$event->getDamage())."\x20/ ".$event->getEntity()->getMaxHealth());$this->getServer()->getScheduler()->scheduleDelayedTask(new EventCheckTask($this,${${"\x47L\x4f\x42\x41\x4cS"}["\x6fvf\x76\x67\x77\x67\x76cn\x66"]},$event->getEntity()->getLevel(),${${"\x47\x4c\x4f\x42A\x4cS"}["\x74\x70\x6egdb\x6f"]}),1);${"\x47\x4cO\x42\x41L\x53"}["a\x75\x6f\x68j\x78\x67"]="\x68ea\x6c\x74\x68P\x61\x72\x74i\x63\x6ce";$this->getServer()->getScheduler()->scheduleDelayedTask(new EventCheckTask($this,${${"\x47LO\x42A\x4c\x53"}["a\x75\x6f\x68\x6a\x78\x67"]},$event->getEntity()->getLevel(),${${"\x47L\x4f\x42\x41\x4cS"}["\x74\x70\x6e\x67\x64b\x6f"]}),1);}public function eventCheck(FloatingTextParticle$particle,Level$level,$event){${"\x47\x4c\x4f\x42\x41L\x53"}["\x72\x69t\x69\x6al"]="p\x61r\x74\x69c\x6ce";${"\x47\x4c\x4fBA\x4c\x53"}["f\x72sk\x74\x67"]="\x65\x76\x65\x6et";if(${${"\x47LO\x42\x41\x4cS"}["\x66\x72\x73k\x74\x67"]} instanceof EntityDamageEvent){if($event->isCancelled())return;}$level->addParticle(${${"\x47\x4c\x4f\x42\x41\x4cS"}["r\x69t\x69\x6a\x6c"]});$this->getServer()->getScheduler()->scheduleDelayedTask(new DeleteParticlesTask($this,${${"\x47\x4c\x4f\x42\x41\x4cS"}["\x6e\x6f\x67\x63m\x6ea"]},$event->getEntity()->getLevel()),20);}public function deleteParticles(FloatingTextParticle$particle,Level$level){$eipbycfmrd="\x70art\x69\x63\x6ce";$particle->setInvisible();$level->addParticle(${$eipbycfmrd});}}
+[43] ?>
+[44] 
+[45] 
+[46] 
+[47] 
+
+Backtrace:
+#0 (): spl_autoload_call(string DF\DF)
+#1 /src/pocketmine/plugin/FolderPluginLoader(48): class_exists(string DF\DF, boolean 1)
+#2 /src/pocketmine/plugin/PluginManager(155): pocketmine\plugin\FolderPluginLoader->loadPlugin(string C:\Users\Dcms\Downloads\Sv 0.14\plugins\DF)
+#3 /src/pocketmine/plugin/PluginManager(333): pocketmine\plugin\PluginManager->loadPlugin(string C:\Users\Dcms\Downloads\Sv 0.14\plugins\DF, array Array())
+#4 /src/pocketmine/Server(1977): pocketmine\plugin\PluginManager->loadPlugins(string C:\Users\Dcms\Downloads\Sv 0.14\plugins\)
+#5 /src/pocketmine/PocketMine(467): pocketmine\Server->__construct(pocketmine\CompatibleClassLoader object, pocketmine\utils\MainLogger object, string C:\Users\Dcms\Downloads\Sv 0.14\, string C:\Users\Dcms\Downloads\Sv 0.14\, string C:\Users\Dcms\Downloads\Sv 0.14\plugins\, string unknown)
+
+Genisys version: 1.1 #0 [Protocol 70; API 2.0.0]
+uname -a: Windows NT WIN-HQ53TBM33EP 6.1 build 7601 (Windows Server 2008 R2 Enterprise Edition Service Pack 1) AMD64
+PHP version: 7.0.18
+Zend version: 3.0.0
+OS : WINNT, win
+
+Loaded plugins:
+加载的插件:
+AdminFun 1.0.0 by hoyinm14mc for API(s) 1.12.0, 1.13.0, 2.0.0
+AntiServerStop 1.1 by paetti for API(s) 1.0.0, 2.0.0, 3.0.0, 3.0.1, 3.1.0, 3.0.0-ALPHA1, 4.0.0, 5.0.0, 3.0.0-ALPHA6
+Broadcaster 1.16 by EvolSoft for API(s) 1.12.0
+CalculatorPE 1.0.0 by Vaivez66 for API(s) 1.12.0
+CmdSnooper 1.2.0 by HotshotHD & CodeRed2019 for API(s) 1.13.0, 2.0.0, 3.0.0, 3.0.0-ALPHA5
+EasierTime 1.2 by Ad5001 for API(s) 2.0.0
+EconomyAPI 2.0.9 by onebone for API(s) 2.0.0
+NetherChests 1.1.1 by aliuly for API(s) 1.12.0
+InventorySize 1 by MaxFreeze for API(s) 2.0.0
+iProtector 3.1b by LDX for API(s) 1.9.0, 3.0.0-ALPHA7
+ItemCasePE 1.0.8 by aliuly for API(s) 1.10.0, 1.13.0
+KillChat 1.0.2.MOD by Array for API(s) 1.9.0, 2.0.0
+SignEnchant 1.1.1 by FRONGKY for API(s) 1.0.0, 1.1.0, 1.2.0, 1.2.1, 3.0.0-ALPHA6, 3.0.0-ALPHA5, 3.0.0-ALPHA4, 2.0.0
+SignModifier 1.0.0 by wolfdale for API(s) 1.3.1
+SimpleAuth 1.8.1 by PocketMine Team, shoghicp, awzaw for API(s) 2.0.0, 3.0.0-ALPHA1, 3.0.0-ALPHA2, 3.0.0-ALPHA3, 3.0.0-ALPHA4, 3.0.0-ALPHA5
+SimpleAuthHelper 2.0.1 by aliuly for API(s) 1.12.0
+Slapper 2.1_PHP7 by EradiCube for API(s) 1.14.0
+WorldProtect 2.2.0 by aliuly for API(s) 1.10.0, 1.12.0, 3.0.0-ALPHA6
+AutoInv[PTK] 1.0.0 by PTK-KienPham for API(s) 1.0.0, 2.0.0
+AWL[PTK] 1 by PTK-KienPham for API(s) 2.0.0, 3.0.0
+BestWE[PTK] 1.5 by PTK-KienPham for API(s) 2.0.0, 3.0.0, 3.0.0-ALPHA8
+BuyEc[PTK] 3 by  for API(s) 2.0.0, 3.0.0
+ChatToolsPro 1.2 by paetti for API(s) 1.0.0, 2.0.0, 3.0.0, 3.0.0-ALPHA, 3.0.0-ALPHA1, 4.0.0, 5.0.0
+CommandBlocker 1.5.5 by Thunder33345 for API(s) 2.0.0
+CONSOLEChat 1.0.0 by TheNewHEROBRINE for API(s) 2.0.0
+Crates[PTK] 0.1 by PTK-KienPham for API(s) 3.0.0, 2.1.0, 2.0.0
+CustomAlerts 1.6 by EvolSoft for API(s) 1.12.0

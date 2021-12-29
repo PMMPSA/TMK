@@ -1,0 +1,31 @@
+name: Crates[PTK]
+main: PTK\Crates\Main
+version: 0.1
+api: [3.0.0,2.1.0, 2.0.0]
+author: PTK-KienPham
+commands:
+ binhthuong:
+  description: Mở Crate Bình Thương!
+  permission: crates.hom1
+ hiem:
+  description: Mở Crate Hiếm!
+  permission: crates.hom2
+ huyenthoai:
+  description: Mở Crate Huyền Thoại!
+  permission: crates.hom3
+ thanthoai:
+  description: Mở Crate Thần Thoại!
+  permission: crates.hom4
+permissions:
+ crates.hom1:
+  default: true
+  description: Permission for opeing binhthuong crate!
+ crates.hom2:
+  default: true
+  description: Permission for homing hiem crate!
+ crates.hom3:
+  default: true
+  description: Permission for opeing huyenthoai crate!
+ crates.hom4:
+  default: true
+  description: Permission for homing thanthoai crate!
